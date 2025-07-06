@@ -1,0 +1,8 @@
+train: /Users/sahilaggarwal/Desktop/gangrene final project/Gangrenedata/train
+val: /Users/sahilaggarwal/Desktop/gangrene final project/Gangrenedata/val
+test: /Users/sahilaggarwal/Desktop/gangrene final project/Gangrenedata/test
+
+names: 
+  0: Gangrene
+  1: not ulcer or gangrene
+  2: ulcer

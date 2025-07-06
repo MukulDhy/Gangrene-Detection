@@ -1,0 +1,123 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "Greetings", "What's up?", "Howdy"],
+        "responses": ["Hello! How can I assist you today?", "Hey there! How can I help?", "Hi! What can I do for you?", "May I be of service? What brings you here today?", "Welcome! Please let me know what I can do for you.", "What can I assist you with today?"]},
+        {
+          "tag": "goodbye",
+          "patterns": ["Goodbye", "Bye", "See you later", "Farewell", "Until next time"],
+          "responses": ["Goodbye! If you have any more questions, feel free to ask.", "Take care! Don't hesitate to return if you have more queries.", "Farewell! Have a great day!", "It was great chatting with you! Don't hesitate to reach out if anything else comes to mind.", "I'm always happy to help. Until next time, take care!","Hope this information was helpful! I'm here if you need anything else!"]
+        },
+        {
+            "tag": "gangrene",
+            "patterns": ["What is gangrene"],
+            "responses": ["gangrene, the decay of body tissue caused by bacterial infection or compromised blood supply, poses a serious threat, particularly in extremities like fingers, toes, hands, and feet. Its various forms, including dry, wet, and gas gangrene, are often triggered by factors like diabetes, atherosclerosis, trauma, or severe infection. Early detection is vital to prevent rapid spread and systemic complications like sepsis."]
+        },
+        {
+            "tag": "type of gangrene",
+            "patterns": ["type of gangrene", "what are the different types of gangrene", "what are the type of gangrene", "how many types of gangrene"],
+            "responses": ["Dry Gangrene:Occurring when the blood supply to a tissue is disrupted, this form results in gradual tissue death, often affecting the extremities. -Wet Gangrene:Frequently triggered by bacterial infection, wet gangrene involves both tissue death and moisture,leading to rapid spread and increased severity. -Gas Gangrene:The most severe manifestation of wet gangrene, gas gangrene is induced by bacteria that produce gas within tissues."]
+        },
+        {
+             "tag": "cause of gangrene",
+             "patterns": ["what cause gangrene", "how can gangrene can happen", "causes of gangrene","how does a person get gangrene"],
+             "responses": ["Gangrene, the destruction of body tissue, can occur due to various reasons: 1. Peripheral Artery Disease (PAD): 2. Diabetes: 3.Injury or Trauma 4.Bacterial Infections: 5.Medical or Surgical treatments: 6.Smoking: 7.Blood Clotting Disorders 8.Chronic Health illnesses: 9.Abuse of drugs gangrene occurs when there is a lack of blood flow (ischemia) to a particular part of the body. When blood flow is significantly reduced or completely stopped, tissues in that area are deprived of oxygen and nutrients essential for their survival. This lack of blood supply can lead to cellular damage and death"]
+        },
+        {
+            "tag": "symptoms of gangrene",
+            "patterns": ["what are symptoms of gangrene", "symptoms of gangrene", "Gangrene symptoms", "what are the symptoms of gangrene"],
+            "responses": ["The symptons of gangrene: 1.Discoloration:The affected area may initially appear red or swollen and later turn black, brown, or purple 2.Pain 3.Loss of sensation or a tingling feeling in the affected area 4.A foul-smelling discharge from the affected area 5.Systemic symptoms such as fever, weakness, and overall feeling of illness 6.especially with gas gangrene, there may be the formation of gas bubbles under the skin."]
+        },
+        {
+            "tag": "gas gangrene",
+            "patterns": ["what is gas gangrene", "gas gangrene"],
+            "responses": ["Wet gangrene in its most severe form, called gas gangrene, is brought on by gas-pro-ducing bacteria, Gas gangrene is a very serious and dangerous type of gangrene caused by bacteria called Clostridium. These bacteria can grow in places with very little oxygen. In gas gangrene, the bacteria make gas inside the body, causing specific problems and symptoms. This condition can be life-threatening and needs immediate medical attention"]
+        },
+        {
+            "tag": "wet gangrene",
+            "patterns": ["what is wet gangrene", "wet gangrene"],
+            "responses": ["Wet gangrene is a serious type of gangrene where the body part gets very infected and wet. It happens when the blood flow is low, and bacteria invade the area. This can make the affected part swollen and moist, it includes tissue death and wetness, it spreads more quickly and might be more harmful."]
+        },
+        {
+            "tag": "dry gangrene",
+            "patterns": ["what is dry gangrene", "dry gangrene"],
+            "responses": ["Dry gangrene is when a part of the body, like a toe or foot, becomes dry and smaller because it doesn't get enough blood. This happens when blood vessels are blocked, making it hard for oxygen and nutrients to reach that body part"]
+        },
+        {
+            "tag": "stages of gangrene",
+            "patterns": ["stages of gangrene", "what are the different stages of gangrene", "different stages of gangrene"],
+            "responses": ["the different stages of gangrene are:", "Stage 1: Ischemia (Reduced Blood Flow): The affected area may feel cool or numb due to decreased blood flow.", "Stage 2: Tissue Hypoxia (Oxygen Deprivation): Pain and tingling sensations emerge as oxygen supply diminishe, Skin discoloration starts, turning reddish or purple due to oxygen starvation, Swelling might occur as fluid accumulates in the affected tissue.", "Stage 3:Tissue Necrosis (Cell Death): The affected area becomes firm and leathery, losing its natural elasticity, Discoloration intensifies, often turning brown or black as dead cells breakdown.", "Stage 4: Demarcation (Separation of Dead and Healthy Tissue):The body attempts to contain the dead tissue by forming a demarcation line separating healthy and affected areas.", "Stage 5: Elimination (Removal of Dead Tissue)"]
+        },
+        {
+            "tag": "overcome",
+            "patterns": ["how to overcome gangrene", "how can we overcome gangrene", "how we can defeat gangrene", "how i can defeat gangrene", "how can i overcome gangrene"],
+            "responses": [" we are unable to provide any medical advice on how to overcome gangrene. It's a serious condition that requires immediate medical attention. Seeking professional help is crucial as self-treatment attempts can worsen the situation."]
+        },
+        {
+            "tag": "ayurvedic treatment",
+            "patterns": ["what are ayurvedic treatment for gangrene", "ayurvedic treatment for gangrene", "ayurvedic solution of gangrene"],
+            "responses": ["Ayurveda has different ways to help keep you healthy, but it's important to know that Ayurvedic treatments are not the main solution for serious things like gangrene.Gangrene is a really serious condition where a part of your body doesn't get enough blood and can die. You need to see a doctor right away to fix the problem, stop infections, and avoid big issues like amputation (cutting off a body part). Ayurveda alone is not enough for such serious problems."]
+        },
+        {
+            "tag": "treatment",
+            "patterns": ["treatment for gangrene", "solution of gangrene", "what are the treatment for gangrene"],
+            "responses": ["The treatment for gangrene depends on the type and severity of the condition, However there are some treatment: 1. Surgical Debridement: 2. Antibiotics: 3. Improving blood flow to the affected area through procedures such as angioplasty or bypass surgery. 4. Wound Care:"]
+        },
+        {
+            "tag": "medicine of gangrene",
+            "patterns": ["what are the medicine of the gangrene", "medicine of gangrene", "gangrene medicine"],
+            "responses": ["medicine of gangrene: Antibiotics, Pain Medications, Wound Care Products"]
+        },
+        {
+            "tag": "difference",
+            "patterns": ["what is the difference between wet gangrene and dry gangrene","difference between wet gangrene and dry gangrene"],
+            "responses": ["Wet gangrene and dry gangrene both happen when blood can't reach part of your body, and the tissues in that area start to die. But wet gangrene also involves a bacterial infection that can quickly spread to your healthy tissues. This leads to symptoms like blisters, fluid drainage and a foul smell."]
+        },
+        {
+            "tag": "who is at risk for gangrene",
+            "patterns": ["Who is at risk for gangrene","which groups of people are more likely to develop gangrene"],
+            "responses": ["People with certain underlying health conditions that affect their blood vessels face a higher risk, Such conditions include: 1.Atherosclerosis, 2.Inflammation of the blood vessels in your limbs leads to blood clots., 3.Diabetes, 4.People with severe injuries also face a higher risk of gangrene, 5. People with weakened immune systems may also face greater risk. "]
+        },
+        {
+            "tag": "how common is gangrene?",
+            "patterns": ["how common is gangrene","what health conditions are associated with an increased risk of gangrene"],
+            "responses": ["It depends on the type. Critical limb ischemia, which can lead to dry gangrene, affects 1 in 100 adults over age 50. It's even more common among people over age 70, affecting 1 in 50 adults.Gas gangrene is less common, affecting about 1,000 people in the U.S. annually. Traumatic injury is the most common cause."]
+        },
+        {
+            "tag": "gangrene look",
+            "patterns":["what does gangrene look like", "how does gangrene look like", "gangrene look", "look of gangrene"],
+            "responses":["Changes in skin color are a prominent sign of gangrene. Your skin may initially look pale due to a lack of blood flow. But then it turns red. It may then turn brown before turning greenish-black. Your skin may also look swollen, possibly with noticeable sores or blisters"]
+        },
+        {
+            "tag": "what tests diagnose gangrene",
+            "patterns": ["what tests diagnose gangrene", "what are the different imaging tests used to diagnose gangrene", "how do doctors confirm the presence of gangrene"],
+            "responses": ["Tests that diagnose gangrene include: Blood tests to check for infection, Bacteria culture test to determine the bacteria involved and the best antibiotic to treat the infection, Imaging tests, such as a computed tomography (CT) scan or magnetic resonance imaging, to confirm the diagnosis and assess the spread., Tests to check your circulation in the affected area."]
+        },
+        {
+            "tag": "what are the treatments for gangrene",
+            "patterns":["what are the treatments for gangrene","what alternative therapies or treatments are being explored for gangrene","how does the severity of gangrene influence the choice of treatment"],
+            "responses":["There are several options for gangrene treatment. Your provider will choose the best method or combination of methods for you depending on the cause of your condition and how far it has progressed. There are several options for gangrene treatment. Your provider will choose the best method or combination of methods for you depending on the cause of your condition and how far it has progressed. The goals of treatment are to: Remove dead or infected tissue from your body., Prevent or treat infection to keep gangrene from spreading., Help your blood flow better, Tissue removal, Infection control, Blood flow restoration, Skin graft surgery"]
+        },
+        {
+            "tag": "what happens if gangrene is left untreated",
+            "patterns": ["what happens if gangrene is left untreated", "what are the potential consequences of leaving gangrene untreated", "how does the severity of gangrene affect the potential outcomes of leaving it untreated"],
+            "responses": ["without treatment, gangrene may progress to a serious blood infection called sepsis. Sepsis may cause complications including: Changes in mental status.,Dangerously low blood pressure.,Organ failure.,Sepsis can also be fatal."]
+        },
+        {
+            "tag": "how long does it take before gangrene causes death",
+            "patterns":["how long does it take before gangrene causes death","how much time typically elapses before gangrene becomes life-threatening", "how soon can gangrene lead to a life-threatening condition", "in cases of gangrene, how long before it poses a risk of death"],
+            "responses":["It depends on the type of gangrene you have and whether it's caused by a bacterial infection. Gas gangrene progresses very fast. It's fatal within 48 hours if you don't receive treatment. Among people who do receive timely treatment, about 75% survive."]
+        },
+        {
+            "tag": "prevention",
+            "patterns": ["how can I prevent gangrene", "what measures can I take to avoid getting gangrene", "what can I do to reduce the risk of developing gangrene", "how do I protect myself from getting gangrene"],
+            "responses":["You can do many things to improve your blood flow and prevent gangrene. If you have risk factors like peripheral artery disease or diabetes, it's especially important to: Eat a heart-healthy diet low in saturated fat and cholesterol., Exercise regularly, Keep your blood glucose levels within the normal range, Quit smoking, and avoid all tobacco products., Never go barefoot, especially outdoors. "]
+        },
+        {
+            "tag":"genetic disease",
+            "patterns": ["is gangrene is genetic disease", "gangrene genetic disease", "is gangrene cause by gentics disorder"],
+            "responses": ["No, gangrene itself is not considered a genetic disease. It's a condition caused by tissue death due to a lack of blood flow, not by genetic mutations passed down from parents."]
+        }
+    ]
+}

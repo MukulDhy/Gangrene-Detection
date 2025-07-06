@@ -1,0 +1,26 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["hello", "hi", "hey", "howdy"],
+        "responses": ["Hello! How can I help you?", "Hi there!", "Hey! What can I do for you today?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["bye", "goodbye", "see you later", "take care"],
+        "responses": ["Goodbye! Have a great day.", "See you later!", "Take care!"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["thanks", "thank you", "appreciate it"],
+        "responses": ["You're welcome!", "No problem.", "Glad I could help."]
+      },
+      {
+        "tag": "search",
+        "patterns": ["search for", "find information about", "tell me about"],
+        "responses": ["Sure! Let me find that information for you.", "Sure thing! I'll look it up."]
+      }
+      
+    ]
+  }
+  
