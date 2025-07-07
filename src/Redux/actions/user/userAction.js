@@ -17,7 +17,7 @@ export const userloginAction = (email, password) => async (dispatch) => {
     const config = { headers: { "Content-Type": "application/json" } };
 
     const { data } = await axios.post(
-      "http://localhost:6969/api/user/login",
+      "https://gangrene-detection-backend.onrender.com/api/user/login",
       { email, password },
       config
     );
@@ -62,7 +62,7 @@ export const registerNewUser = (details) => async (dispatch) => {
     const config = { headers: { "Content-Type": "application/json" } };
 
     const { data } = await axios.post(
-      "http://localhost:6969/api/user/new",
+      "https://gangrene-detection-backend.onrender.com/api/user/new",
       details,
       config
     );

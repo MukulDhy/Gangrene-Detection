@@ -24,7 +24,7 @@ export const imgUploadDetailAction = (file, imgUrl) => async (dispatch) => {
   try {
     console.log(config);
     const { data } = await axios.post(
-      "http://localhost:6969/api/image/new",
+      "https://gangrene-detection-backend.onrender.com/api/image/new",
       formData,
       config
     );
@@ -57,7 +57,7 @@ export const imageMlDataAction = (id, task) => async (dispatch) => {
     };
     // const token = await Cookies.get("token");
     const response = await axios.post(
-      `http://localhost:6969/api/ml/${task}/${id}`,
+      `https://gangrene-detection-backend.onrender.com/api/ml/${task}/${id}`,
       config
     );
     console.log(response.data);
