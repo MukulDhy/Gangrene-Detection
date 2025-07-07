@@ -7,7 +7,7 @@ import torch
 import sys
 
 # Load a model
-model = YOLO('gangrene final project/train2/weights/best.pt')  # load a pretrained model (recommended for training)
+model = YOLO('best.pt')  # load a pretrained model (recommended for training)
 print("Predication -")
 
 inputPath  =  sys.argv[1]

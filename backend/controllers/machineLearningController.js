@@ -621,14 +621,11 @@ const gangereneDetection = catchAsyncError(async (req, res) => {
     imagePath.split("/").pop().split(".")[0] +
     "_predication.png";
 
-  const response = await executePython(
-    "gangrene final project/PRED DETECTION.PY",
-    [
-      imagePath,
-      "backend/image/result/",
-      imagePath.split("/").pop().split(".")[0],
-    ]
-  );
+  const response = await executePython("PRED DETECTION.PY", [
+    imagePath,
+    "backend/image/result/",
+    imagePath.split("/").pop().split(".")[0],
+  ]);
 
   // const response = "\rloading Roboflow workspace...\r\n\rloading Roboflow project...\r\nbackend/image/result/1704194360060_download (3)_predication.png\r\n{'predictions': [{'x': 96.5, 'y': 62.0, 'width': 21.0, 'height': 4.0, 'confidence': 0.5267751216888428, 'class': 'fracture', 'class_confidence': None, 'class_id': 0, 'tracker_id': None, 'image_path': 'backend/public/Images/1704194360060_download (3).jpeg', 'prediction_type': 'ObjectDetectionModel'}, {'x': 10.0, 'y': 90.0, 'width': 16.0, 'height': 8.0, 'confidence': 0.45473629236221313, 'class': 'fracture', 'class_confidence': None, 'class_id': 0, 'tracker_id': None, 'image_path': 'backend/public/Images/1704194360060_download (3).jpeg', 'prediction_type': 'ObjectDetectionModel'}, {'x': 143.0, 'y': 40.5, 'width': 40.0, 'height': 17.0, 'confidence': 0.44767215847969055, 'class': 'fracture', 'class_confidence': None, 'class_id': 0, 'tracker_id': None, 'image_path': 'backend/public/Images/1704194360060_download (3).jpeg', 'prediction_type': 'ObjectDetectionModel'}, {'x': 243.5, 'y': 152.0, 'width': 19.0, 'height': 6.0, 'confidence': 0.4164227843284607, 'class': 'fracture', 'class_confidence': None, 'class_id': 0, 'tracker_id': None, 'image_path': 'backend/public/Images/1704194360060_download (3).jpeg', 'prediction_type': 'ObjectDetectionModel'}, {'x': 137.5, 'y': 28.0, 'width': 9.0, 'height': 4.0, 'confidence': 0.41600462794303894, 'class': 'fracture', 'class_confidence': None, 'class_id': 0, 'tracker_id': None, 'image_path': 'backend/public/Images/1704194360060_download (3).jpeg', 'prediction_type': 'ObjectDetectionModel'}], 'image': {'width': '313', 'height': '161'}}\r\n"
 
