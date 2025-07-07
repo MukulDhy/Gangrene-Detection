@@ -20,7 +20,7 @@ app.use("/api/ml", mlRoutes);
 app.use(errorMiddleWare);
 
 // Server Initialization
-app.listen(process.env.PORT, "localhost", () => {
+app.listen(PORT, "localhost", () => {
   console.log(
     `Server is working on http://localhost:${process.env.PORT}`.underline
       .bgGreen
