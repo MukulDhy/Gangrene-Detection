@@ -14,15 +14,15 @@ export const userloginAction = (email, password) => async (dispatch) => {
   try {
     dispatch({ type: USER_LOGIN_REQUEST });
 
-    const config = { headers: { "Content-Type" : "application/json" } };
+    const config = { headers: { "Content-Type": "application/json" } };
 
-    const {data} = await axios.post(
-      "/api/user/login",
+    const { data } = await axios.post(
+      "http://localhost:6969/api/user/login",
       { email, password },
       config
     );
     dispatch({ type: USER_LOGIN_SUCCESS, payload: data.user });
-    
+
     localStorage.setItem("userLogin", JSON.stringify(data.user));
   } catch (error) {
     // console.log(error);
@@ -30,9 +30,9 @@ export const userloginAction = (email, password) => async (dispatch) => {
     dispatch({
       type: USER_LOGIN_FAIL,
       payload:
-      error.response && error.response.data.message
-      ? error.response.data.message
-      : error.message,
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
     });
   }
 };
@@ -40,9 +40,9 @@ export const userloginAction = (email, password) => async (dispatch) => {
 export const logOutAction = () => async (dispatch) => {
   try {
     dispatch({ type: USER_LOGOUT_REQUEST });
-    localStorage.setItem("userLogin",null);
-    localStorage.removeItem('userLogin');
-    dispatch({ type: USER_LOGOUT_SUCCESS});
+    localStorage.setItem("userLogin", null);
+    localStorage.removeItem("userLogin");
+    dispatch({ type: USER_LOGOUT_SUCCESS });
   } catch (error) {
     // console.log(error);
     dispatch({
@@ -59,15 +59,15 @@ export const registerNewUser = (details) => async (dispatch) => {
   try {
     dispatch({ type: REGISTER_USER_REQUEST });
 
-    const config = { headers: { "Content-Type" : "application/json" } };
+    const config = { headers: { "Content-Type": "application/json" } };
 
-    const {data} = await axios.post(
-      "/api/user/new",
+    const { data } = await axios.post(
+      "http://localhost:6969/api/user/new",
       details,
       config
     );
     dispatch({ type: REGISTER_USER_SUCCESS, payload: data.user });
-    
+
     localStorage.setItem("userLogin", JSON.stringify(data.user));
   } catch (error) {
     // console.log(error);
@@ -75,9 +75,9 @@ export const registerNewUser = (details) => async (dispatch) => {
     dispatch({
       type: REGISTER_USER_FAIL,
       payload:
-      error.response && error.response.data.message
-      ? error.response.data.message
-      : error.message,
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
     });
   }
-}
+};

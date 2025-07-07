@@ -106,7 +106,7 @@ speed: {'preprocess': 28.01060676574707, 'inference': 640.9859657287598, 'postpr
   setTimeout(() => {
     setLoading(false);
     setSuccess(true);
-  }, 5000);
+  }, 10000);
 
   return (
     <>

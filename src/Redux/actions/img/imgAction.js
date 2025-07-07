@@ -22,7 +22,12 @@ export const imgUploadDetailAction = (file, imgUrl) => async (dispatch) => {
   };
 
   try {
-    const { data } = await axios.post("/api/image/new", formData, config);
+    console.log(config);
+    const { data } = await axios.post(
+      "http://localhost:6969/api/image/new",
+      formData,
+      config
+    );
 
     dispatch({
       type: IMG_DETAIL_SUCCESS,
@@ -51,7 +56,10 @@ export const imageMlDataAction = (id, task) => async (dispatch) => {
       },
     };
     // const token = await Cookies.get("token");
-    const response = await axios.post(`/api/ml/${task}/${id}`, config);
+    const response = await axios.post(
+      `http://localhost:6969/api/ml/${task}/${id}`,
+      config
+    );
     console.log(response.data);
     dispatch({ type: IMAGE_ML_DETAIL_SUCCESS, payload: response.data });
   } catch (error) {
